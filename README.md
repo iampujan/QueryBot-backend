@@ -33,7 +33,7 @@ This is the backend for the AI-Powered FAQ System, built using FastAPI. It handl
    cd QueryBot-backend
    ```
 
-2. **Create virtual env with uv and python 3.12. (langenv is the name of the virtual environment.)
+2. **Create virtual env with uv and python 3.12. (langenv is the name of the virtual environment.)**
   ```bash
    uv venv langvenv --python 3.12
   ```
