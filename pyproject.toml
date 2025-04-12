@@ -1,0 +1,15 @@
+[project]
+name = "querybot-backend"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dotenv>=0.9.9",
+    "fastapi>=0.115.12",
+    "langchain>=0.3.23",
+    "loguru>=0.7.3",
+    "openai>=1.73.0",
+    "pydantic>=2.11.3",
+    "uvicorn>=0.34.0",
+]

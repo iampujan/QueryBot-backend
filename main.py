@@ -14,12 +14,12 @@ app = FastAPI()
 FRONTEND_URL = os.getenv("FRONTEND_URL")
 MODEL_NAME = os.getenv("MODEL_NAME")
 MODEL_API_URL = os.getenv("MODEL_API_URL")
-MODEL_API_KEY=os.getenv("MODEL_API_KEY")
+MODEL_API_KEY = os.getenv("MODEL_API_KEY")
 
 class ChatRequest(BaseModel):
     question: str
 
-client = OpenAI(api_key=os.getenv(MODEL_API_KEY), base_url=MODEL_API_URL)
+client = OpenAI(api_key=MODEL_API_KEY, base_url=MODEL_API_URL)
 
 text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
 
